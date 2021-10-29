@@ -65,11 +65,11 @@ The playbook implements the following tasks:
  - increases system memory
 
 The following printout shows the result of running `docker ps` after successfully configuring the ELK instance.
-
-> [ec2-user@3.232.134.89]$ docker ps
-> CONAINTER ID  IMAGE                   COMMAND                     CREATED     STATUS          PORTS   NAMES
-> 08ad78b9b344  cyberxsecurity/ansible  "/bin/sh -c /bin/bas..."    2 days ago  Up 12 minutes           elk
-
+````
+[ec2-user@3.232.134.89]$ docker ps
+CONAINTER ID  IMAGE                   COMMAND                     CREATED     STATUS          PORTS   NAMES
+08ad78b9b344  cyberxsecurity/ansible  "/bin/sh -c /bin/bas..."    2 days ago  Up 12 minutes           elk
+````
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Webserver1 @ 10.0.0.146
@@ -91,8 +91,9 @@ SSH into the control node and follow the steps below:
 
 ### Additional Questions
 - _Which file is the playbook? Where do you copy it?_
-    - The playbook is [install_elk.yaml](https://github.com/TheSneakyOnion/ELK_Stack/blob/main/install_elk.yml)
+    - The playbook is [install_elk.yml](https://github.com/TheSneakyOnion/ELK_Stack/blob/main/install_elk.yml)
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+    - On hosts.yml in the /etc/ansible. Simply add the private IP of the machines you want ELK or Filebeat and Metricbeat on under \[elk] or \[webservers] respectively. 
 - _Which URL do you navigate to in order to check that the ELK server is running?
-
+    -\[ELK server's public IP]:5601
 

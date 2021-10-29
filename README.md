@@ -95,5 +95,5 @@ SSH into the control node and follow the steps below:
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
     - On hosts.yml in the /etc/ansible. Simply add the private IP of the machines you want ELK or Filebeat and Metricbeat on under \[elk] or \[webservers] respectively. 
 - _Which URL do you navigate to in order to check that the ELK server is running?_
-    -\[ELK server's public IP]:5601
+    - \[ELK server's public IP]:5601
 

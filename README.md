@@ -91,7 +91,7 @@ SSH into the control node and follow the steps below:
 
 ### Additional Questions
 - _Which file is the playbook? Where do you copy it?_
-    - The playbook is [install_elk.yaml](/blob/main/install_elk.yaml)
+    - The playbook is [install_elk.yaml](https://github.com/TheSneakyOnion/ELK_Stack/blob/main/install_elk.yml)
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 

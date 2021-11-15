@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![](https://raw.githubusercontent.com/TheSneakyOnion/ELK_Stack/main/Diagrams/ELK_Stack.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat_playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on AWS. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat_playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
   - [filebeat_playbook.yml](https://github.com/TheSneakyOnion/ELK_Stack/blob/main/Ansible/filebeat_playbook.yml)
 
